@@ -1,0 +1,109 @@
+{% load static %}
+
+{% comment %} <nav>
+    <div class="logo-name">
+        <div class="logo-image">
+           <img src="{% static 'images/clicks.png' %}" alt="">
+        </div> 
+
+        <span class="logo_name">Clicks</span>
+    </div>
+
+    <div class="menu-items">
+        <ul class="nav-links">
+            <li><a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="link-name">Dahsboard</span>
+            </a></li>
+
+            <li><a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                <span class="link-name">Analytics</span>
+            </a></li>
+
+            <li><a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span class="link-name">Ad account</span>
+            </a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-photo-film"></i>
+                <span class="link-name">Media buying</span>
+            </a></li>
+        </ul>
+        
+        <ul class="logout-mode">
+            <li><a href="#">
+                <i class="uil uil-signout"></i>
+                <span class="link-name">Logout</span>
+            </a></li>
+
+            <li class="mode">
+                <a href="#">
+                    <i class="uil uil-moon"></i>
+                <span class="link-name">Dark Mode</span>
+            </a>
+
+            <div class="mode-toggle">
+              <span class="switch"></span>
+            </div>
+        </li>
+        </ul>
+    </div>
+</nav> {% endcomment %}
+
+<nav id="sidebar" class="sidebar js-sidebar ">
+    <div class="sidebar-content js-simplebar">
+        <a class="sidebar-brand" href="{% url 'dashboard' %}">
+  <span class="align-middle fs-2">Clicks</span>
+</a>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-header">
+                Pages
+            </li>
+
+            <li class="sidebar-item active">
+                <a class="sidebar-link" href="{% url 'dashboard' %}">
+                    <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'articles' %}">
+                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Articles</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'categories' %}">
+                    <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Categories</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'accounts' %}">
+                    <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Ad accounts</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'media' %}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Media buying</span>
+                </a>
+            </li>
+
+            <li class="sidebar-header">
+                Account
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'logout' %}">
+                    <i class="align-middle" data-feather="square"></i> <span class="align-middle">Logout</span>
+                </a>
+            </li>
+
+
+            
+        </ul>
+    </div>
+</nav>

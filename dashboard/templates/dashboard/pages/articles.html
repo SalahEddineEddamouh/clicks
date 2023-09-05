@@ -1,0 +1,169 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}
+Articles
+{% endblock title %}
+
+
+{% block content %}
+<div class="row p-3">
+    <div class="col-12  d-flex">
+        <div class="card flex-fill overflow-auto">
+            <div class="card-header">
+
+                <h5 class="card-title mb-0">Articles</h5>
+            </div>
+            <table class="table table-hover my-0 text-center" >
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th >image</th>
+                        <th >title</th>
+                        <th >meta</th>
+                        <th>keywords</th>
+                        <th>content</th>
+                         <th>categories</th>
+                        <th>created at</th>
+                        <th>status</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a href="{% url 'article'  %}" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a href="{% url 'article'  %}" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td ><img src="{% static 'images/clicks.png' %}" width="50px" height="50px"></td>
+                        <td >How to scale your business</td>
+                        <td >Discouver all thing about scaling ...</td>
+                        <th>Facebook,tiktok,media buying,snapshat</th>
+                        <th>Discouver all thing about scaling ...</th>
+                        <th>business</th>
+                        <th>21/08/2023</th>
+                        <td><span class="badge bg-success">published</span></td>
+                        <th><a hre="#" class="btn btn-primary rounded px-2">Edit</a></th>
+                        <th><a hre="#" class="btn btn-danger rounded px-2">Delete</a></th>
+                        
+                    </tr>
+                    
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

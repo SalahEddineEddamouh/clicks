@@ -1,0 +1,41 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}
+Article - {{article.title}}
+{% endblock title %}
+
+
+{% block content %}
+<div class="row p-3">
+    <div class="col-12  d-flex">
+        <div class="card flex-fill overflow-auto">
+            <div class="card-header">
+
+                <h5 class="card-title mb-0">Article - {{article.title}}</h5>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                
+                <input type="text" name="title" value="{{article.title}}"><br>
+
+                <input type="text" name="keywords" value="{{article.keywords}}"><br>
+
+                <input type="text" name="meta" value="{{article.meta}}"><br>
+
+                <select name="categories">
+                    <option value="{{article.categories}}" selected>{{article.categories}}</option>
+                    <option value="business">Business</option>
+                    <option value="money">Money</option>
+                    <option value="marketing">marketing</option>
+                    <option value="sales">Sales</option>
+                    
+                </select>    
+                <br>
+
+                <textarea name="content" id="" cols="30" rows="10" value="{{article.content}}">{{article.content}}</textarea>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
